@@ -1,35 +1,19 @@
 {
-  "name": "search-dropdown",
-  "version": "1.0.0",
+  "name": "search-dropdown-app",
+  "private": true,
+  "version": "0.0.0",
   "type": "module",
-  "main": "dist/search-dropdown.umd.js",
-  "module": "dist/search-dropdown.es.js",
-  "exports": {
-    ".": {
-      "import": "./dist/search-dropdown.es.js",
-      "require": "./dist/search-dropdown.umd.js"
-    },
-    "./style.css": "./dist/style.css"
-  },
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
-    "deploy": "npm run build && npm run build-storybook && npm run deploy:gh-pages",
-    "deploy:gh-pages": "gh-pages -d storybook-static",
-    "prepublishOnly": "npm run build"
-  },
-  "peerDependencies": {
-    "react": ">=17.0.0",
-    "react-dom": ">=17.0.0"
+    "build-storybook": "storybook build"
   },
   "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-select": "^5.10.2"
   },
   "devDependencies": {
@@ -44,7 +28,6 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "eslint-plugin-storybook": "^9.1.5",
-    "gh-pages": "^6.3.0",
     "globals": "^16.3.0",
     "prop-types": "^15.8.1",
     "storybook": "^9.1.5",
@@ -59,7 +42,7 @@
     "react",
     "dropdown",
     "search",
-    "component"
+    "webapp"
   ],
   "author": "Your Name",
   "license": "MIT"
