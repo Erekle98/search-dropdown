@@ -7,7 +7,7 @@ A reusable, customizable dropdown component for React, built with react-select, 
 ### Install from GitHub
 
 ```bash
-npm install git+https://github.com/your-username/search-dropdown.git
+npm install git+https://github.com/erekle98/search-dropdown.git
 ```
 
 ## 🧪 Storybook
@@ -54,4 +54,4 @@ npm run build
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
