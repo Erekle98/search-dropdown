@@ -1,12 +1,57 @@
-# React + Vite
+# 🔎 Search Dropdown
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable, customizable dropdown component for React, built with react-select, TailwindCSS, and Vite.
 
-Currently, two official plugins are available:
+## 🚀 Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Install from GitHub
 
-## Expanding the ESLint configuration
+```bash
+npm install git+https://github.com/your-username/search-dropdown.git
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧪 Storybook
+
+Explore the component in isolation with Storybook:
+
+### Run Storybook locally
+
+```bash
+npm run storybook
+```
+
+### Build static Storybook
+
+```bash
+npm run build-storybook
+```
+
+Visit `http://localhost:6006` to view the component documentation and examples.
+
+## 🔧 Development
+
+### Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/your-username/search-dropdown.git
+cd search-dropdown
+npm install
+```
+
+### Development server
+
+```bash
+npm run dev
+```
+
+### Build library
+
+```bash
+npm run build
+```
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

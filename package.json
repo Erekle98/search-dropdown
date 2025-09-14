@@ -1,0 +1,49 @@
+{
+  "name": "search-dropdown",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/search-dropdown.cjs.js",
+  "module": "dist/search-dropdown.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/search-dropdown.esm.js",
+      "require": "./dist/search-dropdown.cjs.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "dependencies": {
+    "react-select": "^5.10.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "vite": "^7.1.5",
+    "prop-types": "^15.8.1",
+    "tailwindcss": "^4.1.13",
+    "@tailwindcss/vite": "^4.1.13",
+    "@storybook/react-vite": "^9.1.5",
+    "@storybook/react": "^9.1.5",
+    "storybook": "^9.1.5",
+    "eslint": "^9.35.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.20",
+    "eslint-plugin-storybook": "^9.1.5",
+    "@eslint/js": "^9.33.0",
+    "@types/react": "^19.1.10",
+    "@types/react-dom": "^19.1.7",
+    "globals": "^16.3.0"
+  }
+}
