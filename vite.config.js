@@ -1,6 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
+import { resolve } from 'path'
+
 
 export default defineConfig({
   plugins: [
@@ -9,9 +11,9 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: "./src/main.jsx",
-      name: "SearchDropdown",
-      fileName: (format) => `search-dropdown.${format}.js`,
+      entry: resolve(__dirname, 'src/components/Dropdown.jsx'),
+      name: 'SearchDropdown',
+      fileName: (format) => `search-dropdown.${format}.js`
     },
     rollupOptions: {
       external: ['react', 'react-dom'],

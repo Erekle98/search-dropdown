@@ -1,14 +1,15 @@
-
-
-/** @type { import('@storybook/react-vite').StorybookConfig } */
-const config = {
-  "stories": [
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"
+export default {
+  stories: ['../src/**/*.stories.@(js|jsx|ts|tsx|mdx)'],
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-interactions',
   ],
-  "addons": [],
-  "framework": {
-    "name": "@storybook/react-vite",
-    "options": {}
-  }
-};
-export default config;
+  framework: {
+    name: '@storybook/react-vite',
+    options: {},
+  },
+  viteFinal: async (config) => {
+    // Modify Vite config if needed
+    return config;
+  },
+}
